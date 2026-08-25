@@ -1,0 +1,40 @@
+{
+  "name": "saucedemo-qa-automation",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Suite Playwright TypeScript exhaustive pour SauceDemo",
+  "scripts": {
+    "test": "playwright test",
+    "test:e2e": "playwright test tests/e2e",
+    "test:smoke": "playwright test --grep @smoke --project=chromium",
+    "test:list": "playwright test --list",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings=0",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "quality": "npm run typecheck && npm run lint && npm run format:check",
+    "report": "playwright show-report",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open allure-report",
+    "quality:report": "node reporting/scripts/generate-quality-report.mjs",
+    "coverage:report": "node reporting/scripts/generate-coverage-report.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "allure": "^3.15.0",
+    "allure-js-commons": "^3.10.2",
+    "allure-playwright": "^3.10.2",
+    "eslint": "^10.9.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-playwright": "^2.11.0",
+    "globals": "^17.11.0",
+    "prettier": "^3.9.6",
+    "typescript": "~6.0.0",
+    "typescript-eslint": "^8.67.0"
+  }
+}
