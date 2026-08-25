@@ -84,20 +84,8 @@ de réussite et la couverture fonctionnelle sont des indicateurs distincts.
 .
 ├── .github/workflows/playwright.yml
 ├── docs/
-│   ├── qa-audit/
-│   │   ├── 01-cartographie-fonctionnelle.md
-│   │   ├── 02-user-stories-criteres-acceptation.md
-│   │   ├── 03-scenarios-gherkin.md
-│   │   ├── 04-strategie-de-test.md
-│   │   ├── 05-plan-de-test.md
-│   │   ├── 06-cas-de-test.md
-│   │   ├── 07-matrice-tracabilite.md
-│   │   └── 08-rapport-final-couverture-automatisation.md
-│   ├── 10-rapport-couverture-apres-refonte.md
-│   ├── business-rules.md
-│   ├── functional-map.md
-│   ├── glossary.md
-│   └── user-stories.md
+│   ├── sprint-review/
+│   │   ├── 01-sprint-review.md
 ├── fixtures/test.fixture.ts
 ├── pages/
 │   ├── cart.page.ts
