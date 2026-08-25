@@ -1,1 +1,138 @@
-
+{
+  "project": "SauceDemo QA Automation",
+  "generatedFrom": {
+    "requirements": "docs/qa-audit/02-user-stories-criteres-acceptation.md",
+    "testCases": "docs/qa-audit/06-cas-de-test.md",
+    "traceability": "docs/qa-audit/07-matrice-tracabilite.md"
+  },
+  "scope": {
+    "referenceCases": 44,
+    "coveredCases": 44,
+    "uncoveredCases": 0,
+    "coverageRate": 100,
+    "technicalAutomatedCases": 44,
+    "automatedExecutions": 132
+  },
+  "userStories": [
+    {
+      "id": "US-001",
+      "name": "Se connecter",
+      "total": 5,
+      "covered": 5,
+      "cases": "TC-001 à TC-005",
+      "uncovered": "—"
+    },
+    {
+      "id": "US-002",
+      "name": "Consulter le catalogue",
+      "total": 2,
+      "covered": 2,
+      "cases": "TC-006, TC-007",
+      "uncovered": "—"
+    },
+    {
+      "id": "US-003",
+      "name": "Trier le catalogue",
+      "total": 5,
+      "covered": 5,
+      "cases": "TC-008 à TC-012",
+      "uncovered": "—"
+    },
+    {
+      "id": "US-004",
+      "name": "Consulter un produit",
+      "total": 3,
+      "covered": 3,
+      "cases": "TC-013 à TC-015",
+      "uncovered": "—"
+    },
+    {
+      "id": "US-005",
+      "name": "Ajouter au panier",
+      "total": 4,
+      "covered": 4,
+      "cases": "TC-016 à TC-019",
+      "uncovered": "—"
+    },
+    {
+      "id": "US-006",
+      "name": "Retirer du panier",
+      "total": 2,
+      "covered": 2,
+      "cases": "TC-020, TC-021",
+      "uncovered": "—"
+    },
+    {
+      "id": "US-007",
+      "name": "Consulter le panier",
+      "total": 3,
+      "covered": 3,
+      "cases": "TC-022 à TC-024",
+      "uncovered": "—"
+    },
+    {
+      "id": "US-008",
+      "name": "Fournir les informations client",
+      "total": 4,
+      "covered": 4,
+      "cases": "TC-025 à TC-028",
+      "uncovered": "—"
+    },
+    {
+      "id": "US-009",
+      "name": "Contrôler le récapitulatif",
+      "total": 4,
+      "covered": 4,
+      "cases": "TC-032 à TC-035",
+      "uncovered": "—"
+    },
+    {
+      "id": "US-010",
+      "name": "Finaliser la commande",
+      "total": 3,
+      "covered": 3,
+      "cases": "TC-036 à TC-038",
+      "uncovered": "—"
+    },
+    {
+      "id": "US-011",
+      "name": "Annuler ou revenir",
+      "total": 2,
+      "covered": 2,
+      "cases": "TC-039, TC-040",
+      "uncovered": "—"
+    },
+    {
+      "id": "US-012",
+      "name": "Gérer la session",
+      "total": 4,
+      "covered": 4,
+      "cases": "TC-041 à TC-043, TC-047",
+      "uncovered": "—"
+    },
+    {
+      "id": "US-013",
+      "name": "Réinitialiser l’application",
+      "total": 1,
+      "covered": 1,
+      "cases": "TC-044",
+      "uncovered": "—"
+    },
+    {
+      "id": "US-014",
+      "name": "Utiliser le menu",
+      "total": 2,
+      "covered": 2,
+      "cases": "TC-045, TC-046",
+      "uncovered": "—"
+    }
+  ],
+  "priorities": [
+    { "id": "P0", "name": "Critique", "total": 23, "covered": 23 },
+    { "id": "P1", "name": "Important", "total": 19, "covered": 19 },
+    { "id": "P2", "name": "Complémentaire", "total": 2, "covered": 2 }
+  ],
+  "uncoveredCases": [],
+  "behavioralMappings": [],
+  "extensions": []
+}
