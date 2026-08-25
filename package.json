@@ -17,8 +17,10 @@
     "format:check": "prettier . --check",
     "quality": "npm run typecheck && npm run lint && npm run format:check",
     "report": "playwright show-report",
-    "allure:generate": "allure generate allure-results --clean",
+    "allure:clean": "...",
+    "allure:generate": "allure generate allure-results",
     "allure:open": "allure open allure-report",
+    "allure:serve": "allure open allure-results",
     "quality:report": "node reporting/scripts/generate-quality-report.mjs",
     "coverage:report": "node reporting/scripts/generate-coverage-report.mjs"
   },
