@@ -4,7 +4,6 @@ import { LoginPage } from '../pages/login.page';
 import { InventoryPage } from '../pages/inventory.page';
 import { CartPage } from '../pages/cart.page';
 import { CheckoutPage } from '../pages/checkout.page';
-import { users } from '../test-data/users';
 
 type Fixtures = {
   loginPage: LoginPage;
@@ -48,9 +47,7 @@ export const test = base.extend<Fixtures>({
     await use(new CheckoutPage(page));
   },
   authenticatedPage: async ({ page }, use) => {
-    const login = new LoginPage(page);
-    await login.goto();
-    await login.login(users.standard.username, users.standard.password);
+    await page.goto('/inventory.html');
     await expect(page).toHaveURL(/\/inventory\.html$/);
     await use();
   },
