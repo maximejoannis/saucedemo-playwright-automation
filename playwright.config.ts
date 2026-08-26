@@ -1,6 +1,8 @@
 import * as os from 'node:os';
 import { defineConfig, devices } from '@playwright/test';
 
+const authFile = 'playwright/.auth/standard-user.json';
+
 export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
@@ -30,8 +32,34 @@ export default defineConfig({
     video: 'retain-on-failure',
   },
   projects: [
-    { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
-    { name: 'firefox', use: { ...devices['Desktop Firefox'] } },
-    { name: 'webkit', use: { ...devices['Desktop Safari'] } },
+    {
+      name: 'setup',
+      testMatch: /auth\.setup\.ts/,
+      use: { ...devices['Desktop Chrome'] },
+    },
+    {
+      name: 'chromium',
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: authFile,
+      },
+      dependencies: ['setup'],
+    },
+    {
+      name: 'firefox',
+      use: {
+        ...devices['Desktop Firefox'],
+        storageState: authFile,
+      },
+      dependencies: ['setup'],
+    },
+    {
+      name: 'webkit',
+      use: {
+        ...devices['Desktop Safari'],
+        storageState: authFile,
+      },
+      dependencies: ['setup'],
+    },
   ],
 });
